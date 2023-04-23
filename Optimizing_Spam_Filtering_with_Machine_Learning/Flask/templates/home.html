@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/home.css" />
+    <script src="../static/script.js" defer></script>
+  </head>
+  <body>
+    <div class="home">
+      <header>
+        <h2>SPAMFILTER</h2>
+        <img class="menu__icon" id="menu" src="../static/Images/menu.png" />
+        <nav>
+          <ul>
+            <li><a href="#section__1">Home</a></li>
+            <li><a href="#desc">About</a></li>
+            <li><a href="#footer-contact">Contact</a></li>
+            <li><a href="/Spam">Spam</a></li>
+          </ul>
+        </nav>
+        <div class="menu__bar" id="menu__bar">
+          
+          <img id="close__menu" src="../static/Images/closeIcon.png"/>
+          <ul>
+            <li><a href="#section_1">Home</a></li>
+            <li><a href="#desc">About</a></li>
+            <li><a href="#footer-contact">Contact</a></li>
+            <li><a href="/Spam">Spam</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section id="section__1">
+          <div class="content">
+            <div class="content__title">
+              <p>
+                <span> SMS </span>
+                <span style="color: red">SPAM</span> Detection <br />
+                Using <span>NLP</span>
+              </p>
+              <a href="/Spam">Try it</a>
+              <p class="desc" id="desc">
+                SMS spam detection system that uses MLP and machine learning
+                algorithms to filter out unwanted messages. With a user-friendly
+                interface and customizable settings, users can enjoy a spam-free
+                texting experience. Try the system to enjoy personalized spam
+                filtering and security.
+              </p>
+            </div>
+            <picture class="img_container">
+              <source
+                media="(min-width:750px)"
+                class="desk_img"
+                srcset="../static/Images/Spam_image_1.png"
+              />
+              <source
+                media="(min-width:550px)"
+                class="tab_img"
+                srcset="../static/Images/s2.png"
+              />
+              <img class="mobile_img" src="../static/Images/small.png" />
+            </picture>
+          </div>
+        </section>
+        <section id="about">
+          <h3>SPAM DETECTION</h3>
+          <h2>
+            <span style="font-weight: 800">Spam Detector for </span>Short
+            Message Service (SMS)
+          </h2>
+          <p>
+            SMS spam is a growing problem that affects millions of mobile device
+            users worldwide. It can be annoying, disruptive, and even dangerous
+            if it contains malicious links or phishing scams. Our system is
+            designed to provide maximum protection against SMS spam by
+            accurately identifying and filtering out unwanted messages.
+            Multi-Layer Perceptron (MLP) is an advanced artificial neural
+            network that can learn and recognize complex patterns. In the
+            context of SMS spam detection, MLP is trained on large datasets of
+            labeled messages to identify spam patterns and distinguish them from
+            legitimate messages. Our system utilizes advanced machine learning
+            algorithms that continuously learn and adapt to new types of spam,
+            ensuring that our users are always protected against the latest
+            threats. Additionally, we provide a user-friendly interface with
+            customizable settings, allowing users to personalize their spam
+            filtering experience.
+          </p>
+          <br />
+          <p>
+            At the core of our technology is the belief that the power of
+            technology can be harnessed to make our lives safer and more
+            efficient. By leveraging the latest advances in machine learning and
+            mobile security, we are able to provide a spam-free texting
+            experience and ensure that our users' messages are safe and secure.
+            Thank you for your interest in our SMS spam detection system using
+            MLP, and we look forward to helping you stay protected against SMS
+            spam.
+          </p>
+        </section>
+        <footer id="footer-contact">
+          <h2>Contact</h2>
+
+          <form
+            action="mailto:nn5412042@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            Name:<br />
+            <input type="text" name="name" /><br />
+            Comments:<br />
+            <input type="text" name="comment" size="50" /><br /><br />
+            <input type="submit" value="Send" />
+          </form>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

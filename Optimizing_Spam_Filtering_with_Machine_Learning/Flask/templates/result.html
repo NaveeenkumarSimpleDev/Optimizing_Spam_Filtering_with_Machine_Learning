@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spam</title>
+    <link rel="stylesheet" href="../static/spam.css" />
+  </head>
+  <style>
+    .content p {
+      font-size: 2.5rem;
+    }
+    .content span {
+      font-weight: 800;
+    }
+    .content form label {
+      font-weight: 800;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    .content div {
+      padding: 8rem;
+      display: grid;
+      gap: 2rem;
+    }
+    .content .spam span {
+      color: red;
+    }
+    .content .ham span {
+      color: green;
+    }
+    @media screen and (max-width: 850px) {
+      .result {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .content > div {
+        padding: 3rem;
+      }
+      .content picture {
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h2>SPAMFILTER</h2>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content result" >
+      <div>
+        <p>
+          <span> SMS </span>
+          <span style="color: red">SPAM</span> Detection <br />
+          Using <span>NLP</span>
+        </p>
+        <h1 class="{{post}}">The prediction Is: <span>{{prediction}}</span></h1>
+      </div>
+      <picture>
+        <source
+          media="(min-width:750px)"
+          class="desk_img"
+          srcset="../static/Images/Spam_image_1.png"
+        />
+        <source
+          media="(min-width:550px)"
+          class="tab_img"
+          srcset="../static/Images/S2.png"
+        />
+        <img class="mobile_img" src="../static/Images/small.png" />
+      </picture>
+    </div>
+  </body>
+</html>
